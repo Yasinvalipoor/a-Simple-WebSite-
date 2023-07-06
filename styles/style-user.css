@@ -1,0 +1,156 @@
+body
+{
+    background-color: rgb(200, 76, 50);
+    
+}
+
+::selection
+{
+    background-color: rgb(47, 248, 255);
+}
+
+
+/*--------------------- Header Style ---------------------*/
+
+
+header
+{
+    text-align: center;
+    color: white;
+    font-size: 2.2rem;
+    margin-top: 35px;
+}
+
+
+/*--------------------- Content Style ---------------------*/
+
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    height: auto; 
+    position: relative;
+    transform: translateX(2rem) translateY(25px);
+
+}
+
+.content h2
+{
+    color: rgb(217, 222, 226);
+}
+
+.content p
+{
+    font-size: 20px;
+}
+
+.content
+{
+    display: inline-block;
+    width: 25rem;
+    height: 15rem;
+    border-radius: 20px;
+    padding: 15px 10px;
+    background-color: rgb(218, 86, 55);
+}
+
+
+/*--------------------- Menu Style ---------------------*/
+
+
+ul
+{
+    position: absolute;
+    right: 4em;
+    bottom: -15px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 25px;
+    border-radius: 25px;
+    background-color: rgb(218, 86, 55)
+    
+}
+
+li
+{
+    list-style-type: none;
+    margin: 0 0 15px 0;
+}
+
+a
+{
+    color: rgb(31, 30, 30);
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: white;
+    transition: all .2s;
+}
+
+li:first-child
+{
+    padding-top: 20px;
+}
+
+li:last-of-type
+{
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+li:nth-child(even)
+{
+    padding-top: 5px;
+}
+
+
+/*--------------------- Start Responsive ---------------------*/
+
+
+@media (max-width: 768px)
+{
+    .container
+    {
+        flex-direction: column;
+        align-items: center;
+        transform: none;
+    } 
+
+    ul 
+    {
+        position: static;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: baseline;
+    }
+
+    li
+    {
+        padding: 8px;
+    }
+}
+
+@media (min-width: 768px)
+{
+    .nav
+    {
+        position: relative;
+        width: 100px;    
+    }
+
+    .menu
+    {
+        
+        width: auto;
+        max-width: 80%;
+        height: auto;
+        padding: 10px 25px;
+        border-radius: 25px;
+        background-color: rgb(218, 86, 55); 
+        position: absolute;
+        right:  0px;
+    } 
+}
